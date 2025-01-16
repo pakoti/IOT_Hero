@@ -1,5 +1,5 @@
 # IOT Hero
-in this repository i am trying to collect code and project for ESP8266  For Internet of things projects.
+in this repository i am trying to collect codes and projects for Internet of things(IOT) projects.
 
 
 IOT projects:
@@ -26,8 +26,8 @@ IOT projects:
 
 |Ardunio|Description|Link|
 |---|---|---|
-|Safe Lock  |   |  <a href="/codes/ardunio/Lock_door/">Link</a>  |
-|    |   |  <a href="/codes/ardunio/"></a>  |
+|Safe Lock  |a simple electronic lock   |  <a href="/codes/ardunio/Lock_door/">Link</a>  |
+| Sim800   |how to work with simcard modules   |  <a href="/codes/ardunio/"></a>  |
 |    |   |  <a href="/codes/ardunio/"></a>  |
 
 
