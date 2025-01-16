@@ -27,7 +27,7 @@ IOT projects:
 |Ardunio|Description|Link|
 |---|---|---|
 |Safe Lock  |a simple electronic lock   |  <a href="/codes/ardunio/Lock_door/">Link</a>  |
-| Sim800   |how to work with simcard modules   |  <a href="/codes/ardunio/"></a>  |
+| Sim800   |how to work with simcard modules   |  <a href="/codes/ardunio/sim800/"></a>  |
 |    |   |  <a href="/codes/ardunio/"></a>  |
 
 
