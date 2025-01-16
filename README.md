@@ -1,14 +1,9 @@
 # IOT Hero
 in this repository i am trying to collect codes and projects for Internet of things(IOT) projects.
 
-
-
-
-
 <p align="center">
   <img src="/Pictures/IOT_Hero.jfif" width=50% height=50%>
 </p>
-
 
 
 
