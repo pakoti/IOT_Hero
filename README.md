@@ -2,6 +2,8 @@
 in this repository i am trying to collect codes and projects for Internet of things(IOT) projects.
 
 
+
+## Table of contents
 IOT projects:
 <ul>
 <li>ESP 8266</li> 
@@ -11,8 +13,8 @@ IOT projects:
 </ul>
 
 
-## Table of contents
 
+### ESP 8266 Projects
 
 |ESP 8266|Description|Link|
 |---|---|---|
@@ -20,16 +22,10 @@ IOT projects:
 |Connect to a WIFI|Get your first ip address|<a href="/codes/esp8266/Wifi_1/">Link</a>|
 |Webserver| Running Webserver on esp8266|<a href="/codes/esp8266/Webserver">Link</a>|
 |    |   |<a href="/codes/esp8266/">Link</a>|
-|    |   |<a href="/codes/esp8266/">Link</a>|
-|    |   |<a href="/codes/esp8266/">Link</a>|
-|    |   |<a href="/codes/esp8266/">Link</a>|
-|    |   |<a href="/codes/esp8266/">Link</a>|
-|    |   |<a href="/codes/esp8266/">Link</a>|
 
 
 
-
-
+### Ardunio Projects
 
 |Ardunio|Description|Link|
 |---|---|---|
@@ -41,12 +37,10 @@ IOT projects:
 |GPS Modules|neo6m gps modules |<a href="/codes/ardunio/GPS/">Link</a> |
 |HC05 Bluetooth Module    |   |<a href="/codes/ardunio/bluetooth/">Link</a> |
 |    |   |<a href="/codes/ardunio/">Link</a> |
-|    |   |<a href="/codes/ardunio/">Link</a> |
-|    |   |<a href="/codes/ardunio/">Link</a> |
 
 
 
-
+### ESP 32 Projects
 
 |ESP 32|Description|Link|
 |---|---|---|
@@ -57,12 +51,12 @@ IOT projects:
 
 
 
+### Rassbery Pi Projects
 
 |Rassbery Pi|Description|Link|
 |---|---|---|
 |   |     |<a href="/codes/ardunio/Lock_door/">Link</a>|
-|   |     |<a href="/codes/ardunio/Lock_door/">Link</a>|
-|   |     |<a href="/codes/ardunio/Lock_door/">Link</a>|
+
 
 
 
@@ -81,8 +75,6 @@ This project is licensed under the Creative Commons Zero v1.0 Universal license.
 Creative Commons Zero v1.0 Universal
 
 <img src="/88x31.png" alt="Creative Commons Zero v1.0 Universal">
-
-
 
 
 ## Contributing
