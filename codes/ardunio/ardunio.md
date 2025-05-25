@@ -268,11 +268,6 @@ Cons: Needs more wires, complex for many devices.
 
 
 
-
-
-
-
-
 ### **What is CAN Bus in Arduino?**  
 
 
