@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-// WiFi credentials
+// WiFi credentials 
 const char* ssid = "";
 const char* password = "";
 
@@ -251,7 +251,7 @@ void serveMainPage() {
         
         <div class="relay-control">
             <div class="relay-item">
-                <h3 class="relay-title">Relay 1 - Lights</h3>
+                <h3 class="relay-title">Relay 1 - Output1</h3>
                 <div class="radio-group">
                     <div class="radio-option">
                         <input type="radio" id="relay1-on" name="relay1" value="1">
@@ -265,7 +265,7 @@ void serveMainPage() {
             </div>
             
             <div class="relay-item">
-                <h3 class="relay-title">Relay 2 - Fan</h3>
+                <h3 class="relay-title">Relay 2 - Output2</h3>
                 <div class="radio-group">
                     <div class="radio-option">
                         <input type="radio" id="relay2-on" name="relay2" value="1">
@@ -279,7 +279,7 @@ void serveMainPage() {
             </div>
             
             <div class="relay-item">
-                <h3 class="relay-title">Relay 3 - Pump</h3>
+                <h3 class="relay-title">Relay 3 - Output3</h3>
                 <div class="radio-group">
                     <div class="radio-option">
                         <input type="radio" id="relay3-on" name="relay3" value="1">
@@ -293,7 +293,7 @@ void serveMainPage() {
             </div>
             
             <div class="door-section">
-                <h3 class="relay-title">🚪 Door Control</h3>
+                <h3 class="relay-title"> Door Control</h3>
                 <p><strong>Additional authentication required for door control</strong></p>
                 <p style="color: #e74c3c; font-size: 0.9rem;">Door will automatically close after 2 seconds</p>
                 
@@ -303,7 +303,7 @@ void serveMainPage() {
                 </div>
                 
                 <button id="door-open-button" class="door-button">
-                    🔓 OPEN DOOR
+                     OPEN DOOR
                 </button>
                 <div id="door-countdown" style="text-align: center; margin-top: 10px; display: none;">
                     Door closing in: <span class="countdown" id="countdown-timer">2</span> seconds
@@ -404,7 +404,7 @@ void serveMainPage() {
                 
                 // Disable button during operation
                 doorOpenButton.disabled = true;
-                doorOpenButton.textContent = "⏳ OPENING...";
+                doorOpenButton.textContent = " OPENING...";
                 doorStatus.textContent = "Opening...";
                 
                 fetch('/door-control', {
@@ -452,7 +452,7 @@ void serveMainPage() {
             
             function resetDoorButton() {
                 doorOpenButton.disabled = false;
-                doorOpenButton.textContent = "🔓 OPEN DOOR";
+                doorOpenButton.textContent = "OPEN DOOR";
             }
             
             function showMessage(element, text, type) {
