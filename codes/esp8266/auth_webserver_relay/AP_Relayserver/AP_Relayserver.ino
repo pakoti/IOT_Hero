@@ -1,9 +1,9 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-// WiFi credentials 
-const char* ssid = "";
-const char* password = "";
+// WiFi credentials for Access Point
+const char* ap_ssid = "ESP8266_Relay_Controller";
+const char* ap_password = "12345678";
 
 ESP8266WebServer server(80);
 
@@ -35,15 +35,15 @@ void setup() {
     digitalWrite(relayPins[i], HIGH); // Start with relays OFF
   }
   
-  // Connect to WiFi
-  WiFi.begin(ssid, password);
-  Serial.print("Connecting to WiFi");
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(1000);
-    Serial.print(".");
-  }
-  Serial.println("\nConnected! IP address: ");
-  Serial.println(WiFi.localIP());
+
+ // Create Access Point
+  WiFi.mode(WIFI_AP);
+  WiFi.softAP(ap_ssid, ap_password);
+  
+  Serial.println("Access Point Started");
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.softAPIP());
+
 
   // Setup server routes
   server.on("/", HTTP_GET, handleRoot);
@@ -125,7 +125,7 @@ void serveLoginPage() {
         
         <div id="login-message" class="message"></div>
         <div class="info">
-            <p>IP: )rawliteral" + WiFi.localIP().toString() + R"rawliteral(</p>
+            <p>IP: )rawliteral" + WiFi.softAPIP().toString() + R"rawliteral(</p>
         </div>
     </div>
 
@@ -245,7 +245,7 @@ void serveMainPage() {
         
         <div class="status-bar">
             <div>Status: <span id="connection-status">Connected</span></div>
-            <div>IP: )rawliteral" + WiFi.localIP().toString() + R"rawliteral(</div>
+            <div>IP: )rawliteral" + WiFi.softAPIP().toString() + R"rawliteral(</div>
             <div>Door: <span id="door-status">Closed</span></div>
         </div>
         

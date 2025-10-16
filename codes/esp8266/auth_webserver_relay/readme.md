@@ -334,3 +334,11 @@ GND -> GND
 - The authentication is session-based but doesn't persist after ESP8266 restart
 
 Upload this code to your ESP8266, and you'll have a secure web interface to control your 4-channel relays!
+
+
+
+ESP8266 GPIO → 1K resistor → Base of 2N2222
+Emitter of 2N2222 → GND
+Collector of 2N2222 → Relay IN pin
+Relay VCC → External 5V
+Relay GND → External GND
