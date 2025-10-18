@@ -38,6 +38,15 @@ void setup() {
 
  // Create Access Point
   WiFi.mode(WIFI_AP);
+  
+  // Configure IP address
+  IPAddress local_IP(192, 168, 4, 1);    // Set your desired IP
+  IPAddress gateway(192, 168, 4, 1);     // Set gateway IP
+  IPAddress subnet(255, 255, 255, 0);    // Set subnet mask
+  
+  if (!WiFi.softAPConfig(local_IP, gateway, subnet)) {
+    Serial.println("STA Failed to configure");
+  }
   WiFi.softAP(ap_ssid, ap_password);
   
   Serial.println("Access Point Started");
