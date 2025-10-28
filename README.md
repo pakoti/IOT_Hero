@@ -12,8 +12,6 @@ IOT projects:
 <ul>
 <li>ESP 8266</li> 
 <li>Ardunio</li> 
-<li>ESP 32</li>
-<li>Rassberry Pi</li>
 </ul>
 
 
